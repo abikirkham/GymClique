@@ -1,0 +1,17 @@
+<!-- templates/social/dashboard.html -->
+{% extends 'social/base.html' %}
+
+{% block title %}Dashboard - GymClique{% endblock %}
+
+{% block content %}
+<h2>Your Dashboard</h2>
+<form method="post">
+    {% csrf_token %}
+    <textarea name="status" rows="4" cols="50"></textarea>
+    <button type="submit">Post Status</button>
+</form>
+<div>
+    <h3>Statuses</h3>
+    <!-- Display statuses here -->
+</div>
+{% endblock %}
