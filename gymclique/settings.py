@@ -47,6 +47,7 @@ INSTALLED_APPS = [
     'whitenoise.runserver_nostatic',
     'bootstrap4',
     'social',
+    'crispy_forms',
 ]
 
 MIDDLEWARE = [
@@ -71,7 +72,7 @@ ROOT_URLCONF = 'gymclique.urls'
 TEMPLATES = [
     {
         'BACKEND': 'django.template.backends.django.DjangoTemplates',
-        'DIRS': [],
+        'DIRS': [BASE_DIR / 'social/templates/social',],
         'APP_DIRS': True,
         'OPTIONS': {
             'context_processors': [
@@ -86,6 +87,7 @@ TEMPLATES = [
 
 WSGI_APPLICATION = 'gymclique.wsgi.application'
 
+CRISPY_TEMPLATE_PACK = 'bootstrap4'
 
 # Database
 # https://docs.djangoproject.com/en/5.0/ref/settings/#databases

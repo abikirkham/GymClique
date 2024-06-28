@@ -1,0 +1,23 @@
+<!-- templates/social/profile.html -->
+{% extends 'social/base.html' %}
+
+{% block title %}Profile - GymClique{% endblock %}
+
+{% block content %}
+<div class="row">
+    <div class="col-md-8">
+        <h2>Profile</h2>
+        <form method="POST" enctype="multipart/form-data">
+            {% csrf_token %}
+            <fieldset class="form-group">
+                <legend class="border-bottom mb-4">Profile Info</legend>
+                {{ u_form|crispy }}
+                {{ p_form|crispy }}
+            </fieldset>
+            <div class="form-group">
+                <button type="submit" class="btn btn-outline-info">Update</button>
+            </div>
+        </form>
+    </div>
+</div>
+{% endblock %}

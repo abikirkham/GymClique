@@ -1,0 +1,20 @@
+<!-- social/templates/social/home.html -->
+{% load static %}
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Home - GymClique</title>
+    <link rel="stylesheet" href="{% static 'css/bootstrap.min.css' %}">
+    <!-- Other CSS files -->
+</head>
+<body>
+    <div class="container">
+        <h1>Welcome to GymClique</h1>
+        <p>Join GymClique today to connect with fitness enthusiasts!</p>
+        <a href="{% url 'register' %}" class="btn btn-primary">Register</a>
+    </div>
+    <!-- Bootstrap and other JS files -->
+    <script src="{% static 'js/bootstrap.min.js' %}"></script>
+</body>
+</html>
