@@ -26,7 +26,7 @@ SECRET_KEY = 'django-insecure-tns@a!0-#y+a*-#nf)av5pwx1jc#@na0wdf@=u-ga37j^1*t@m
 # SECURITY WARNING: don't run with debug turned on in production!
 DEBUG = True
 
-ALLOWED_HOSTS = ['8000-abikirkham-gymclique-qpjp9btwwc2.ws.codeinstitute-ide.net', 'localhost', 'https://gym-clique-31c3f2041a6c.herokuapp.com/ ']
+ALLOWED_HOSTS = ['8000-abikirkham-gymclique-qpjp9btwwc2.ws.codeinstitute-ide.net', 'localhost', 'gym-clique-31c3f2041a6c.herokuapp.com']
 CSRF_TRUSTED_ORIGINS = ['https://8000-abikirkham-gymclique-qpjp9btwwc2.ws.codeinstitute-ide.net']
 
 
